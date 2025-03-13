@@ -1,109 +1,33 @@
-# **Object-Oriented Programming (OOP) Projects**
+# Online Reservation and Management System
 
-This repository contains multiple projects and examples developed as part of my **Object-Oriented Programming (OOP)** course. These projects demonstrate the principles of OOP, such as encapsulation, polymorphism, and modular design, using practical scenarios like reservation systems, library management, bank account management, and geometric calculations.
-
----
+This project implements an **Object-Oriented Online Reservation and Management System** in C++. It demonstrates core OOP principles like encapsulation, inheritance, and polymorphism by managing customers, services, and reservations.
 
 ## **Overview**
+The system allows users to:
+- Add customers and manage their reservations.
+- Create and manage various services (e.g., hotel rooms, flights, etc.).
+- Make and track reservations between customers and services.
 
-Each project focuses on a specific real-world application of OOP concepts. These examples aim to provide a comprehensive understanding of how to design, implement, and use object-oriented programs effectively.
+### **Features**
+1. **Customer Management**:
+   - Create customers with unique IDs and names.
+   - Add and display customer reservations.
 
----
+2. **Service Management**:
+   - Define services with attributes like type, price, and availability.
+   - Check and update service availability during booking.
 
-## **Projects**
+3. **Reservation Management**:
+   - Link customers to services via reservations.
+   - Track reservation details such as reservation ID and associated service.
 
-### **1. Reservation System**
-A system that allows customers to book services such as hotel rooms. It demonstrates:
-- Customer management and reservation linking.
-- Service availability checks and booking functionality.
-- Modular design using separate classes for `Customer`, `Service`, and `Reservation`.
+## **Code Structure**
+- **`Customer.h` / `Customer.cpp`**:
+  Handles customer details and their reservations.
+- **`Service.h` / `Service.cpp`**:
+  Defines available services and booking functionalities.
+- **`Reservation.h` / `Reservation.cpp`**:
+  Links customers to services, storing reservation details.
+- **`main.cpp`**:
+  Demonstrates the system in action with example objects and operations.
 
-**Key Files**:
-- `Customer.cpp`, `Customer.h`
-- `Reservation.cpp`, `Reservation.h`
-- `Service.cpp`, `Service.h`
-- `main.cpp`
-
-**Sample Features**:
-- Add and view reservations for a customer.
-- Book a service and manage availability.
-
----
-
-### **2. Library Management System**
-A project that manages books, members, and borrowing operations in a library. It demonstrates:
-- Book addition, removal, and viewing.
-- Member registration and management.
-- Borrowing and returning books with status updates.
-
-**Key Files**:
-- `Book.cpp`, `Book.h`
-- `Member.cpp`, `Member.h`
-- `Library.cpp`, `Library.h`
-- `main.cpp`
-
-**Sample Features**:
-- Add and remove books from the library.
-- Register members and manage their borrowing history.
-- Borrow and return books dynamically.
-
----
-
-### **3. Bank Account Management**
-A simple program to simulate bank account operations such as deposits and withdrawals. It highlights:
-- Encapsulation of account details.
-- Methods for balance updates and checks.
-
-**Key File**:
-- `BankAccount.cpp`
-
-**Features**:
-- Deposit money into the account.
-- Withdraw money with balance validation.
-- Handle insufficient funds gracefully.
-
----
-
-### **4. Rectangle Perimeter and Area Calculation**
-A program for calculating the area and perimeter of a rectangle. It showcases:
-- Class design for geometric shapes.
-- Dynamic updates to object properties.
-
-**Key File**:
-- `Rectangle.cpp`
-
-**Features**:
-- Compute area and perimeter based on dimensions.
-- Modify rectangle dimensions dynamically.
-- Recalculate area and perimeter after updates.
-
----
-
-## **Project Structure**
-
-```plaintext
-oop-projects/
-│
-├── Reservation System/
-│   ├── Customer.cpp
-│   ├── Customer.h
-│   ├── Reservation.cpp
-│   ├── Reservation.h
-│   ├── Service.cpp
-│   ├── Service.h
-│   └── main.cpp
-│
-├── Library Management/
-│   ├── Book.cpp
-│   ├── Book.h
-│   ├── Member.cpp
-│   ├── Member.h
-│   ├── Library.cpp
-│   ├── Library.h
-│   └── main.cpp
-│
-├── Bank Account/
-│   └── BankAccount.cpp
-│
-└── Geometry/
-    └── Rectangle.cpp
